@@ -7,7 +7,7 @@ metadata:
     github.com/project-slug: karimshaik-cmd/Springboot-CI-CD-Pipeline
     backstage.io/techdocs-ref: dir:.
   tags:
-      - spring boot
+      - spring-boot
   links:
   - url: https://github.com/karimshaik-cmd
     title: GitHub Profile
