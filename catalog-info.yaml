@@ -17,6 +17,7 @@ metadata:
   annotations:
     github.com/project-slug: karimshaik-cmd/Springboot-CI-CD-Pipeline
     backstage.io/techdocs-ref: dir:.
+    jenkins.io/job-full-name: springboot-pipeline
   tags:
     - spring-boot
   links:
