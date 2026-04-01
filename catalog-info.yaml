@@ -6,6 +6,13 @@ metadata:
   annotations:
     github.com/project-slug: karimshaik-cmd/Springboot-CI-CD-Pipeline
     backstage.io/techdocs-ref: dir:.
+  tags:
+      - spring boot
+  links: 
+      - url: http://localhost:8080/home
+      - title: Dashboard
+      - icon: Dashboard
+      - type: Dashboard
 spec:
   type: service
   lifecycle: production
