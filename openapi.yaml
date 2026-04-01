@@ -1,11 +1,130 @@
-openapi: 3.0.0
+openapi: 3.0.1
 info:
-  title: Spring Boot API
-  version: 1.0.0
+  title: OpenAPI definition
+  version: v0
+servers:
+  - url: 'http://localhost:8080'
+    description: Generated server url
 paths:
-  /users:
-    get:
-      summary: Get users
+  /inventory/:
+    put:
+      tags:
+        - inventory-controller
+      operationId: editInventory
+      parameters:
+        - name: inventoryId
+          in: query
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InventoryRequestDto'
+        required: true
       responses:
         '200':
-          description: Success
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ApiResponseDtoObject'
+    post:
+      tags:
+        - inventory-controller
+      operationId: createInventory
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InventoryRequestDto'
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ApiResponseDtoObject'
+    delete:
+      tags:
+        - inventory-controller
+      operationId: deleteInventory
+      parameters:
+        - name: inventoryId
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ApiResponseDtoObject'
+  '/inventory/{inventoryId}':
+    get:
+      tags:
+        - inventory-controller
+      operationId: getInventoryById
+      parameters:
+        - name: inventoryId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ApiResponseDtoObject'
+  /inventory/all:
+    get:
+      tags:
+        - inventory-controller
+      operationId: getAllInventories
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ApiResponseDtoObject'
+  /home:
+    get:
+      tags:
+        - controller
+      operationId: home
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+components:
+  schemas:
+    InventoryRequestDto:
+      type: object
+      properties:
+        itemName:
+          type: string
+        price:
+          type: number
+          format: double
+        quantity:
+          type: integer
+          format: int32
+    ApiResponseDtoObject:
+      type: object
+      properties:
+        message:
+          type: string
+        response:
+          type: object
+        success:
+          type: boolean
