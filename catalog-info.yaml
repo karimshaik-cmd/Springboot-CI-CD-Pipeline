@@ -9,7 +9,7 @@ metadata:
   tags:
       - spring boot
   links: 
-      - url: http://localhost:8080/home
+      - url: https://github.com/karimshaik-cmd
       - title: Dashboard
       - icon: Dashboard
       - type: Dashboard
