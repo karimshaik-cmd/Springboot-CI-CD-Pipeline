@@ -20,3 +20,5 @@ spec:
   type: service
   lifecycle: production
   owner: group:dev-team
+  providesApis:
+    - springboot-api
