@@ -8,11 +8,14 @@ metadata:
     backstage.io/techdocs-ref: dir:.
   tags:
       - spring boot
-  links: 
-      - url: https://github.com/karimshaik-cmd
-      - title: Dashboard
-      - icon: Dashboard
-      - type: Dashboard
+  links:
+  - url: https://github.com/karimshaik-cmd
+    title: GitHub Profile
+    icon: github
+
+  - url: http://localhost:9090/job/springboot-pipeline/
+    title: Jenkins Pipeline
+    icon: dashboard
 spec:
   type: service
   lifecycle: production
