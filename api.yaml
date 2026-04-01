@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: springboot-api
+  description: Spring Boot REST API
+spec:
+  type: openapi
+  lifecycle: production
+  owner: group:dev-team
+  definition:
+    $text: ./openapi.yaml
