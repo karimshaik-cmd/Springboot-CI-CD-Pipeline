@@ -6,7 +6,7 @@ metadata:
 spec:
   type: url
   targets:
-    - https://github.com/karimshaik-cmd/Springboot-CI-CD-Pipeline/blob/main/api.yaml
+    - https://raw.githubusercontent.com/karimshaik-cmd/Springboot-CI-CD-Pipeline/main/api.yaml
 
 ---
 apiVersion: backstage.io/v1alpha1
