@@ -6,7 +6,6 @@ This repository has been archived and is no longer maintained.
 
 The frontend and backend codebases have been migrated into a single unified repository for easier development, maintenance, and deployment.
 
-👉 Active Repository: [https://github.com/DharshiBalasubramaniyam/cloud-inventory-app](https://github.com/DharshiBalasubramaniyam/cloud-inventory-app)
 
 - - -
 
