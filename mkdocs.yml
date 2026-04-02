@@ -1,0 +1,7 @@
+site_name: Spring Boot CI/CD Pipeline
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core
