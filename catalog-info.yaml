@@ -16,7 +16,9 @@ metadata:
   description: Spring Boot CI/CD pipeline with Jenkins
   annotations:
     github.com/project-slug: karimshaik-cmd/Springboot-CI-CD-Pipeline
-    jenkins.io/job-full-name: springboot-pipeline
+    jenkins.io/job-full-name: |
+    springboot-pipeline
+    fintech-dashboard
     backstage.io/techdocs-ref: dir:.
   tags:
     - spring-boot
