@@ -7,8 +7,8 @@ metadata:
   annotations:
     github.com/project-slug: karimshaik-cmd/Springboot-CI-CD-Pipeline
     jenkins.io/job-full-name: |
-    springboot-pipeline
-    fintech-dashboard
+      springboot-pipeline
+      fintech-dashboard
     backstage.io/techdocs-ref: dir:.
   tags:
     - spring-boot
