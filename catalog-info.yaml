@@ -49,3 +49,11 @@ spec:
   type: service
   lifecycle: production
   owner: group:qa-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: fintech-system
+  description: Fintech platform system
+spec:
+  owner: group:ops-team
