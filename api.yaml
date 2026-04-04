@@ -10,3 +10,15 @@ spec:
   owner: group:dev-team
   definition:
     $text: https://raw.githubusercontent.com/karimshaik-cmd/Springboot-CI-CD-Pipeline/main/openapi.yaml
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: fintech-api
+spec:
+  type: openapi
+  lifecycle: production
+  owner: group:qa-team
+  definition:
+    $text: https://raw.githubusercontent.com/karimshaik-cmd/fintech/main/openapi.yaml
