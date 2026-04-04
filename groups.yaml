@@ -1,0 +1,34 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: dev-team
+  description: Development Team
+spec:
+  type: team
+  profile:
+    displayName: Dev Team
+  children: []
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: qa-team
+  description: QA Team
+spec:
+  type: team
+  profile:
+    displayName: QA Team
+  children: []
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: ops-team
+  description: Operations Team
+spec:
+  type: team
+  profile:
+    displayName: Ops Team
+  children: []
