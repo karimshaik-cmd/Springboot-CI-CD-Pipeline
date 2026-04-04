@@ -4,6 +4,7 @@ kind: Location
 metadata:
   name: springboot-api-location
 spec:
+  system: fintech-system
   type: url
   targets:
     - https://raw.githubusercontent.com/karimshaik-cmd/Springboot-CI-CD-Pipeline/main/api.yaml
@@ -29,6 +30,7 @@ metadata:
       icon: dashboard
 
 spec:
+  system: fintech-system
   type: service
   lifecycle: production
   owner: group:dev-team
@@ -47,6 +49,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
+  system: fintech-system
   lifecycle: production
   owner: group:qa-team
 ---
@@ -56,4 +59,5 @@ metadata:
   name: fintech-system
   description: Fintech platform system
 spec:
+  system: fintech-system
   owner: group:ops-team
