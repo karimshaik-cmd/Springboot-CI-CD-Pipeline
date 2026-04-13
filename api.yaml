@@ -21,4 +21,4 @@ spec:
   lifecycle: production
   owner: group:qa-team
   definition:
-    $text: https://raw.githubusercontent.com/karimshaik-cmd/fintech/main/openapi.yaml
+    $text: https://raw.githubusercontent.com/karimshaik-cmd/Springboot-CI-CD-Pipeline/main/openapi.yaml
