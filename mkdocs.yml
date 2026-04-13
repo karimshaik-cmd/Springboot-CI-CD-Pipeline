@@ -5,3 +5,8 @@ nav:
 
 plugins:
   - techdocs-core
+
+theme:
+  name: material
+
+docs_dir: docs
