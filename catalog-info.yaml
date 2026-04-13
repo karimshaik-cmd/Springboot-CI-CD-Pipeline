@@ -8,6 +8,7 @@ spec:
   type: url
   targets:
     - https://raw.githubusercontent.com/karimshaik-cmd/Springboot-CI-CD-Pipeline/main/api.yaml
+    - https://raw.githubusercontent.com/karimshaik-cmd/Springboot-CI-CD-Pipeline/main/groups.yaml
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
