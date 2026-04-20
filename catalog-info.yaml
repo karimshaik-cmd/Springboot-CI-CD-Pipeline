@@ -2,7 +2,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: Banking Connect
+  name: springboot-api
 spec:
   system: Banking Connect-system
   type: url
