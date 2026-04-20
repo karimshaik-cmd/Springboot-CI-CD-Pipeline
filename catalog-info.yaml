@@ -2,9 +2,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: springboot-api-location
+  name: Banking Connect
 spec:
-  system: fintech-system
+  system: Banking Connect-system
   type: url
   targets:
     - https://raw.githubusercontent.com/karimshaik-cmd/Springboot-CI-CD-Pipeline/main/api.yaml
@@ -13,8 +13,8 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: springboot-pipeline
-  description: Spring Boot CI/CD pipeline with Jenkins
+  name: Gateway
+  description: PU CI/CD pipeline with Jenkins
   annotations:
     github.com/project-slug: karimshaik-cmd/Springboot-CI-CD-Pipeline
     jenkins.io/job-full-name: springboot-pipelines
@@ -31,34 +31,34 @@ metadata:
       icon: dashboard
 
 spec:
-  system: fintech-system
+  system: Banking Connect-system
   type: service
   lifecycle: production
   owner: group:dev-team
   providesApis:
-    - springboot-api
+    - nbbl-gateway-api
 
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: fintech-dashboard
-  description: Fintech dashboard service
+  name: Banking Connect-system
+  description: Banking Connect service
   annotations:
     github.com/project-slug: karimshaik-cmd/fintech
     jenkins.io/job-full-name: fintech-dashboard
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
-  system: fintech-system
+  system: Banking Connect-system
   lifecycle: production
   owner: group:qa-team
 ---
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: fintech-system
-  description: Fintech platform system
+  name: Banking Connect-system
+  description: Banking Connect-system
 spec:
-  system: fintech-system
+  system: Banking Connect-system
   owner: group:ops-team
